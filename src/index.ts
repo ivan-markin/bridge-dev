@@ -4,7 +4,6 @@ function importAll(r) {
 importAll(require.context('./images/', true, /\.(jpe?g|png|gif|svg|mp4|ico)$/));
 importAll(require.context('./fonts/', true, /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/));
 import './scss/style.scss';
-import AOS from 'aos';
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 export function mobileCheck(device = (navigator.userAgent || navigator.vendor || window['opera'])): boolean {
@@ -15,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sideMenuCloseButton = document.querySelector('.side-menu__close');
     const networkLink = document.getElementById('networksLink');
     const sideMenuBlock = document.querySelector('.side-menu');
+    const AOS = require ('aos');
 
     Swiper.use([Navigation, Pagination]);
 

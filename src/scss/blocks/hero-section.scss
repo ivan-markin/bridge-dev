@@ -67,6 +67,10 @@
 
   &__main-image {
     order: 2;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__bridge-image {
