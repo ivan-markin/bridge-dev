@@ -1,8 +1,7 @@
 .card-tags {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  gap: 6px;
+  position: relative;  
   margin-bottom: 11px;
 
   &__show-more {
@@ -21,8 +20,7 @@
 
     &.active {
       display: flex;
-      align-items: center;
-      gap: 6px;
+      align-items: center;      
     }
 
     &-close {
