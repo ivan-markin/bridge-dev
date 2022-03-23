@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const sideMenuCloseButton = document.querySelector('.side-menu__close');
     const networkLink = document.getElementById('networksLink');
     const sideMenuBlock = document.querySelector('.side-menu');
+    const textInputEl = document.querySelectorAll('.text-input__input');
+    const joinUsLink = document.getElementById('joinUsLink');
+    const feedbackPopup = document.querySelector('.feedback-popup');
+    const feedbackPopupCloseButton = document.querySelectorAll('.popup-close');
     const AOS = require ('aos');
 
     Swiper.use([Navigation, Pagination]);
@@ -61,11 +65,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function sideMenuHandler() {
         sideMenuBlock?.classList.toggle('active');
         document.body.classList.toggle('fixed');
-        }
-
-        if (window.matchMedia("(max-width: 768px)").matches) {
-        window.addEventListener('scroll', changePanelPosition, { once: true });
     }
+
+    function feedbackPopupHandler() {
+        feedbackPopup?.classList.toggle('active');
+        document.body.classList.toggle('fixed');     
+    }   
+
+    function setFilledClass(event) {
+        event.target.value
+            ? event.target.classList.add('filled')
+            : event.target.classList.remove('filled');
+    }
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        window.addEventListener('scroll', changePanelPosition, { once: true });
+    }    
 
     window.addEventListener('resize', () => {
         if (window.matchMedia("(max-width: 768px)").matches) {
@@ -75,6 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sideMenuCloseButton?.addEventListener('click', sideMenuHandler);
     networkLink?.addEventListener('click', sideMenuHandler);
+    
+    textInputEl?.forEach(el => {
+        el.addEventListener('blur', setFilledClass);
+    })
+
+    joinUsLink?.addEventListener('click', feedbackPopupHandler);
+    
+    feedbackPopupCloseButton?.forEach(button => {
+        button.addEventListener('click', feedbackPopupHandler);
+    })
 
     AOS.init();
 })
