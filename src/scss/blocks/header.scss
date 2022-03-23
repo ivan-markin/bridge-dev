@@ -1,5 +1,9 @@
 .header {
 
+  &__logo {
+    margin-right: 64px;
+  }
+  
   &__container {
     display: flex;
     align-items: center;
@@ -7,9 +11,15 @@
     height: 96px;
   }
 
+  &__container-left {
+    display: flex;
+    align-items: center;    
+    height: 96px;
+  }
+
   &__menu {
     ul {
-      li {
+      li {        
         a {
           font-weight: 400;
           color: $link-gray;
@@ -17,7 +27,7 @@
       }
 
       li:not(:last-of-type) {
-        margin-right: 80px;
+        margin-right: 32px;
       }
     }
 

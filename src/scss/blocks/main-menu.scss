@@ -11,12 +11,18 @@
       line-height: 1;
 
       a {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         transition: color .2s;
         cursor: pointer;
 
         &:hover {
           color: $blue;
+        }
+
+        img {
+          margin-right: 6px;
         }
       }
     }
