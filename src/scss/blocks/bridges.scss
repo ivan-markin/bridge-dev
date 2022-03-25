@@ -2,6 +2,18 @@
   background-color: #F4F6FB;
   padding: 40px 0;
 
+  &_not-found {
+    background: #F4F6FB no-repeat bottom center;
+    background-image: image-set(
+      url('../../images/notfound-img.png') 1x,
+      url('../../images/notfound-img@2x.png') 2x
+    );
+
+    @media (max-width: 768px) {
+      background-image: none;
+    }
+  }
+
   &__top-panel {
     display: flex;
     align-items: center;
