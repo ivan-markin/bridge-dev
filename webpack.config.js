@@ -119,6 +119,7 @@ module.exports = {
     htmlWebpackPreconfigured("page-reviews"),
     htmlWebpackPreconfigured("page"),
     htmlWebpackPreconfigured("bridge-page"),
+    htmlWebpackPreconfigured("not-found"),
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),
