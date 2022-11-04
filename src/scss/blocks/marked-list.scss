@@ -1,0 +1,14 @@
+.marked-list {
+	margin-bottom: 0;
+
+	li {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.57;			
+		color: #142438;
+
+		@media (min-width: 1920px) {
+			font-size: .73vw;
+		}
+	}
+}

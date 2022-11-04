@@ -1,83 +1,53 @@
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Regular.ttf');
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+       url('../fonts/Mulish-Regular.woff') format('woff'),
+       url('../fonts/Mulish-Regular.ttf') format('ttf');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Bold.ttf');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Thin.otf');
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Regular.otf');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Medium.otf');
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Bold.otf');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-ExtraBold.otf');
-  font-style: normal;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Bold.otf');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-SemiBold.otf');
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-SemiBold.woff2') format('woff2'),
+       url('../fonts/Mulish-SemiBold.woff') format('woff'),
+       url('../fonts/Mulish-SemiBold.ttf') format('ttf');
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Medium.otf');
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Bold.woff2') format('woff2'),
+       url('../fonts/Mulish-Bold.woff') format('woff'),
+       url('../fonts/Mulish-Bold.ttf') format('ttf');
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Regular.otf');
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Mulish-ExtraBold.woff') format('woff'),
+       url('../fonts/Mulish-ExtraBold.ttf') format('ttf');
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+       url('../fonts/Poppins-SemiBold.woff') format('woff'),
+       url('../fonts/Poppins-SemiBold.ttf') format('ttf');
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Poppins-ExtraBold.woff') format('woff'),
+       url('../fonts/Poppins-ExtraBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 800;
 }
