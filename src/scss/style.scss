@@ -101,6 +101,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Mulish', 'Roboto', sans-serif;
   color: var(--font-dark);

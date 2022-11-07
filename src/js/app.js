@@ -1,4 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
+import smoothscroll from 'smoothscroll-polyfill';
 
 const chooseTokenButtons = document.querySelectorAll('.choose-token-button');
 const chooseTokenInput = document.querySelector('.find-bridge-form__choose-token-input');    
@@ -20,6 +21,7 @@ const estimatedTokenBtn = document.querySelector('.estimated-token-button');
 const walletButton = document.querySelector('.wallet-info-button');
 
 flsFunctions.isWebp();
+smoothscroll.polyfill();
 
 function closeBottomPopup(evt) {
     evt.target.closest('.popup-bottom').classList.remove('active');        
