@@ -4,22 +4,17 @@
 	background-position: 16px center;
 	background-size: 19px;
 	color: var(--font-dark);
-	border-radius: 18px;
+	border-radius: 12px;
 	border: none;
-	height: 52px;	
-	font-size: 18px;
+	height: 40px;	
+	font-size: 16px;
 	outline: none;
 	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.02);
-	transition: all .1s;
-	padding: 0 24px 0 47px;	
+	transition: all .1s;	
+	padding: 0 24px 0 47px;		
 
-	@media (max-width: 1280px), (min-width: 1920px) {
-		background-position: .83vw center;
-		background-size: 1vw;		
-		border-radius: .94vw;		
-		height: 2.7vw;
-		font-size: .94vw;		
-		padding: 0 1.25vw 0 2.45vw;
+	&::placeholder {
+		color: #C3CCD6;
 	}
 
 	&_outlined {		
@@ -27,7 +22,7 @@
 		box-shadow: none;
 
 		&:focus {
-			border-color: var(--font-dark);
+			border-color: var(--primary-blue);
 		}
 	}		
 }

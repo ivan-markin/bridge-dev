@@ -70,21 +70,14 @@
 
 	&__close {
 		display: block;
-		width: 17px;
-		height: 17px;
+		width: 13px;
+		height: 13px;
 		background: url('../img/popup-close-button.svg') no-repeat center;
 		background-size: contain;
 		position: absolute;
-		right: 23px;
-		top: 32px;
+		right: 32px;
+		top: 28px;
 		cursor: pointer;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			width: .89vw;
-			height: .89vw;	
-			right: 1.2vw;
-			top: 1.67vw;
-		}
 	}
 
 	&__text {
