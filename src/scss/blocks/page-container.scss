@@ -2,9 +2,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex: auto;
-	background-color: var(--color-bg);	
-	padding: 40px 3.8vw;
+	flex: auto;	
+	padding: 40px 3.8vw 0 3.8vw;
 
 	@media (max-width: 768px) {
 		padding: 40px 20px 33px;

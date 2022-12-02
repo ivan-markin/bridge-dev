@@ -94,6 +94,9 @@
 @import './blocks/transfers-faq.scss';
 @import './blocks/block-title.scss';
 @import './blocks/marked-list.scss';
+@import './blocks/transfers-container.scss';
+@import './blocks/transfers-wrapper.scss';
+@import './blocks/telegram-widget.scss';
 
 *,
 *::before,
@@ -132,6 +135,8 @@ fieldset {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  background: url('../img/page-bg.jpg') no-repeat center top;
+  background-size: cover;
 }
 
 .wrap {

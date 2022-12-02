@@ -1,20 +1,16 @@
 .footer {	
-	flex: none;
-	height: 3.85vw;
+	flex: none;	
 	background-color: #142438;
 	color: #D9DBE1;
 	font-size: 14px;
-	padding: 0 3.8vw;
-
-	@media (max-width: 1280px), (min-width: 1920px) {
-		font-size: .73vw;		
-	}
+	padding: 0 3.8vw;	
 	
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 3.85vw;
+		height: 74px;
+		position: relative;
 	}
 
 	&__left,

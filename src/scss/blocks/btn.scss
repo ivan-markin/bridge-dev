@@ -10,9 +10,7 @@
   transition: all .2s;
   cursor: pointer;
   
-  &_blue {
-    height: 56px;
-    border-radius: 12px;
+  &_blue { 
     background-color: var(--primary-blue);
     font-size: 18px;
     font-weight: 700;
@@ -20,19 +18,14 @@
   }
 
   &_primary {
-    height: 3.75vw;
-    border-radius: .83vw;
-    background-color: #142438;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #003980;
     font-size: 20px;
     font-weight: 800;
-    color: white;    
-    padding: 0 2.34vw;
-
-    @media (max-width: 1280px), (min-width: 1920px) {
-      font-size: 1.04vw;
-			height: 80px;
-      padding: 0 45px;
-		} 
+    color: white;  
+    border: none;  
+    padding: 0 2.34vw;   
 
     &:disabled {
       background-color: #EDF2F4;
@@ -51,19 +44,12 @@
   }
   
   &_middle {
-    height: 40px;    
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #142438;
-    border-radius: 8px;
+    height: 48px;    
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #003980;
+    border-radius: 16px;
     padding: 0 28px;
-
-    @media (max-width: 1280px), (min-width: 1920px) {
-      height: 2.08vw;
-      font-size: .9375vw;     
-      border-radius: .42vw;
-      padding: 0 1.46vw;
-    }
 
     &:hover {
       background-color: #0A3468;

@@ -5,13 +5,11 @@
 
 	&__main {
 		display: flex;
-		align-items: center;		
-		gap: 16px;
-		margin-bottom: 20px;
+		flex-direction: column;
+		gap: 16px;		
 
 		@media (max-width: 1920px) {
-			gap: .83vw;
-			margin-bottom: 1.04vw;
+			gap: .83vw;			
 		}
 
 		@media (min-width: 1921px) {			
@@ -20,10 +18,10 @@
 	}
 
 	&__main-inputs {
-		display: flex;
-		flex: auto;
-		width: 70%;
-		gap: 6px;
+		display: flex;		
+		flex-direction: column;
+		width: 100%;
+		gap: 8px;
 		position: relative;		
 
 		@media (max-width: 1280px), (min-width: 1920px) {
@@ -37,32 +35,24 @@
 		display: flex;		
 		flex-direction: column;
 		flex: auto;
-		width: 50%;		
-		background-color: #F4F6FB;
-		padding: 9px 25px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			width: 20.83vw;
-			padding: .52vw 1.3vw;
-		}
-
-		@media (min-width: 1920px) {
-			gap: 10px;
-		}
+		width: 100%;		
+		background: #EFF6FC;
+		border: 1px solid #E2E6EE;
+		padding: 11px 16px 14px 20px;	
 
 		&_from {			
-			border-radius: 16px 0 0 16px;		
+			border-radius: 16px 16px 0 0;		
 			
 			@media (max-width: 1280px), (min-width: 1920px) {
-				border-radius: .83vw 0 0 .83vw;
+				border-radius: .83vw .83vw 0 0;
 			}
 		}
 
 		&_to {			
-			border-radius: 0 16px 16px 0;	
+			border-radius: 0 0 16px 16px;	
 			
 			@media (max-width: 1280px), (min-width: 1920px) {
-				border-radius: 0 .83vw .83vw 0;
+				border-radius: 0 0 .83vw .83vw;
 			}
 		}		
 	}	
@@ -91,7 +81,7 @@
 	}
 
 	&__balance-title {
-		font-size: 14px;
+		font-size: 12px;
 		color: #9599AD;
 
 		@media (max-width: 1280px), (min-width: 1920px) {
@@ -101,59 +91,26 @@
 	}
 
 	&__balance-value {
-		font-size: 14px;
+		font-size: 12px;
 		color: var(--primary-blue);
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .73vw;
-		}
 	}
 
 	&__main-input-content {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-
-	&__main-input-block {
-		display: inline-grid;
-		vertical-align: top;
-		align-items: baseline;
-		position: relative;
-		max-width: 10.42vw;		
-
-		&::after,
-		input {
-			width: auto;			
-			grid-area: 1 / 2;			
-			font: inherit;			
-			resize: none;
-			background: none;
-			appearance: none;
-			border: none;
-		}
-
-		&::after {
-			content: attr(data-value) ' ';
-			visibility: hidden;
-			white-space: pre-wrap;
-		}
+		margin-bottom: 3px;
 
 		input {
 			font-size: 24px;
 			font-weight: 500;
 			color: var(--font-dark);
 			outline: none;
-			max-width: 10.42vw;
-			line-height: 1;	
-			
-			@media (max-width: 1280px), (min-width: 1920px) {
-				font-size: 1.25vw;
-			}
-
-			@media (min-width: 1920px) {
-				font-size: 2.2vw;
-			}
+			flex: auto;
+			line-height: 1;						
+			border: none;
+			background-color: transparent;
+			padding-right: 20px;
 
 			&::placeholder {
 				color: #D3D5E0;
@@ -163,25 +120,7 @@
 			&.overbalance {
 				color: #E74142;
 			}
-		}
-
-		span {
-			position: absolute;
-			bottom: 4px;
-			right: -15px;
-			color: #D3D5E0;
-			font-size: 14px;
-
-			@media (max-width: 1280px), (min-width: 1920px) {
-				font-size: .73vw;
-				bottom: 0.17vw;
-				right: -0.8vw;
-			}
-		}		
-	}	
-
-	&__main-input-input {		
-		
+		}			
 	}
 
 	&__equivalent {
@@ -194,23 +133,8 @@
 		}
 	}
 
-	&__submit {
-		flex: auto;		
-		height: 72px;
-		width: 30%;
-		font-size: 20px;
-		max-width: 320px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			width: auto;
-			font-size: 1.04vw;
-			height: 4.625vw;
-			max-width: none;			
-		}
-
-		@media (min-width: 1920px) {						
-			height: 5.1vw;			
-		}
+	&__submit {		
+		width: 100%;		
 	}
 
 	&__filters {
@@ -420,26 +344,24 @@
 		border: #E2E6EE 1px solid;
 		background: white;
 		border-radius: 6px;
-		width: 27px;
-		height: 26px;
+		width: 34px;
+		height: 34px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
-		cursor: pointer;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			border-radius: .3125vw;
-			width: 1.4vw;
-			height: 1.35vw;
-		}
+		cursor: pointer;	
 
 		img {
-			width: 14px;
-
-			@media (max-width: 1280px), (min-width: 1920px) {
-				width: .73vw;
-			}
+			width: 18px;
+			transform: rotate(.25turn);
 		}
+	}
+
+	&__main-input-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 26px;
 	}
 }
