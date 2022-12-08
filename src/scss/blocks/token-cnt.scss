@@ -1,0 +1,66 @@
+.token-cnt {	
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	flex: auto;
+	background: #F7F9FC;
+	border-radius: 12px;
+	padding: 10px;
+
+	&__icon {
+		position: relative;
+		width: 32px;
+		height: 32px;
+
+		&-token {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+		}
+
+		&-network {
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			border: 1px #F7F9FC solid;
+			position: absolute;
+			bottom: -3px;
+			right: -3px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	&__value {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	&__caption {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 12px;
+		line-height: 1;
+		color: #9599AD;
+
+		span {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			
+			&:not(:first-child)::before {
+				content: '';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: rgba(149, 153, 173, 0.45);
+			}
+		}
+	}
+}

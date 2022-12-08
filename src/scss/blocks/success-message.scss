@@ -1,0 +1,57 @@
+.success-message {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	border-radius: 12px;
+	background: url('../../img/success-bg.png') no-repeat center;
+	background-size: cover;
+	padding: 10px 10px 12px;
+
+	&__title {
+		font-size: 12px;
+		line-height: 1;
+	}
+
+	&__value {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+
+		&-main {
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 1;
+		}
+
+		&-secondary {
+			font-size: 12px;		
+			line-height: 1;
+			letter-spacing: 0.15em;			
+			color: #10B57E;
+		}
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			font-weight: 600;
+			font-size: 11px;
+			color: #142438;
+			
+			&:not(:first-child)::before {
+				content: '';
+				width: 3px;
+				height: 3px;
+				border-radius: 50%;
+				background-color: #142438;
+			}
+		}
+	}
+}

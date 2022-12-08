@@ -1,5 +1,5 @@
 .loader {
-	color: white;
+	color: var(--primary-blue);
 	font-size: 20px;	
 	width: 24px;
 	height: 24px;
@@ -13,8 +13,8 @@
 	transform: translateZ(0) scale(.2);
 	margin-right: 8px;
 
-	@media (max-width: 1280px), (min-width: 1920px) {
-		margin-right: .42vw;
+	&_dark {
+		color: #142438;
 	}
 }
 

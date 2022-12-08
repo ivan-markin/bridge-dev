@@ -1,0 +1,158 @@
+<div class="transfers__content">
+	<div class="transfers__supported">
+		<span class="transfers__supported-title">
+			Supported <span>10</span> bridges, <span>16</span> protocols and <span>2</span> routes				
+		</span>			
+	</div>
+	<form class="transfers-form">
+		<fieldset class="transfers-form__main">
+			<div class="transfers-form__main-inputs">
+				<button class="transfers-form__change-fields-button">
+					<img src="@img/change-fields-icon.svg" alt="">
+				</button>
+				<div class="transfers-form__main-input transfers-form__main-input_from">
+					<div class="transfers-form__main-input-head">
+						<span class="transfers-form__main-input-name">From</span>							
+					</div>
+					<div class="transfers-form__main-input-content">
+						<input type="text" placeholder="0" size="1">
+						<button class="choose-token-button">
+							<div class="choose-token-button__icons">
+								<img class="choose-token-button__icon choose-token-button__icon_token"
+									src="@img/tokens-logos/token.png" alt="">
+								<img class="choose-token-button__icon choose-token-button__icon_network"
+									src="@img/tokens-logos/network.png" alt="">
+							</div>
+							<div class="choose-token-button__value">
+								<span class="choose-token-button__token">USDT</span>
+								<span class="choose-token-button__network">Polygon</span>
+							</div>
+						</button>
+					</div>
+					<div class="transfers-form__main-input-bottom">
+						<span class="transfers-form__equivalent">$0</span>
+						<div class="transfers-form__main-input-balance">
+							<!-- <button class="max-button" disabled>MAX</button> -->
+							<span class="transfers-form__balance-title">Balance:</span>
+							<span class="transfers-form__balance-value">0</span>
+						</div>
+					</div>
+				</div>
+				<div class="transfers-form__main-input transfers-form__main-input_to">
+					<div class="transfers-form__main-input-head">
+						<span class="transfers-form__main-input-name">To (Estimated)</span>							
+					</div>
+					<div class="transfers-form__main-input-content">
+						<input type="text" placeholder="0" size="1">
+						<button class="choose-token-button">
+							<div class="choose-token-button__icons">
+								<img class="choose-token-button__icon choose-token-button__icon_token"
+									src="@img/tokens-logos/token.png" alt="">
+								<img class="choose-token-button__icon choose-token-button__icon_network"
+									src="@img/tokens-logos/network.png" alt="">
+							</div>
+							<div class="choose-token-button__value">
+								<span class="choose-token-button__token">USDT</span>
+								<span class="choose-token-button__network">Polygon</span>
+							</div>
+						</button>
+					</div>
+					<div class="transfers-form__main-input-bottom">
+						<span class="transfers-form__equivalent">$0</span>
+						<!-- <div class="transfers-form__main-input-balance">									
+							<span class="transfers-form__balance-title">Balance:</span>
+							<span class="transfers-form__balance-value">0</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div class="swap-details">
+				<div class="swap-details__main">
+					<div class="swap-details__target">
+						<img class="swap-details__target-icon" src="@img/route-item-logo.png" alt="">
+						<div class="swap-details__target-caption">
+							<span class="swap-details__target-title">4.8 AVAX</span>
+							<div class="swap-details__target-details">
+								<span>$5.63</span>
+								<span>on Avalanche</span>
+							</div>								
+						</div>
+					</div>
+					<div class="swap-details__info">
+						<div class="swap-details__info-item tooltip-cnt">
+							<span class="swap-details__info-icon">
+								<img src="@img/time-icon.svg" alt="">
+							</span>
+							<span class="swap-details__info-caption">14:53</span>
+							<div class="tooltip-popup">
+								<span>Estimated swap execution time in minutes</span>
+							</div>
+						</div>
+						<div class="swap-details__info-item tooltip-cnt">
+							<span class="swap-details__info-icon">
+								<img src="@img/gas-icon.svg" alt="">
+							</span>
+							<span class="swap-details__info-caption">$20.93</span>
+							<div class="tooltip-popup">
+								<span>Estimated network fee. 1.218333 MATIC ($1.03)</span>
+							</div>
+						</div>
+						<div class="swap-details__info-item tooltip-cnt">
+							<span class="swap-details__info-icon">
+								<img src="@img/steps-icon.svg" alt="">
+							</span>
+							<span class="swap-details__info-caption">1</span>
+							<div class="tooltip-popup">
+								<span>1 transaction</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swap-details__path">
+					<div class="swap-details__path-item tooltip-cnt">
+						<div class="estimated-token__route-logos route-logos">
+							<img class="estimated-token__route-logo route-logo" src="@img/route-item-logo.png" alt="">									
+						</div>
+						<span>Router</span>
+						<div class="tooltip-popup">
+							<span>Router via LiFi</span>
+						</div>
+					</div>
+					<div class="swap-details__path-item tooltip-cnt">
+						<div class="estimated-token__route-logos route-logos">
+							<img class="estimated-token__route-logo route-logo" src="@img/route-item-logo.png" alt="">
+							<img class="estimated-token__route-logo route-logo" src="@img/route-item-logo2.png" alt="">
+						</div>
+						<span>Bridges</span>
+						<div class="tooltip-popup" style="left: 15px;">
+							<span>Bridge via Connext and Symbyosis</span>
+						</div>
+					</div>
+					<div class="swap-details__path-item tooltip-cnt">
+						<div class="estimated-token__route-logos route-logos">									
+							<img class="estimated-token__route-logo route-logo" src="@img/route-item-logo2.png" alt="">
+						</div>
+						<span>DEX</span>
+						<div class="tooltip-popup" style="left: 15px;">
+							<span>Transfer via 1inch</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- <div class="swap-details swap-details_loading">
+				<span class="loader"></span>
+			</div> -->
+			
+			<!-- <div class="swap-details swap-details_no-routes">
+				<img src="@img/no-routes-icon.svg" width="23" height="26" alt="">
+				<h3>No routes availaible</h3>
+				<p>Try another token combination</p>
+			</div> -->
+
+			<button class="transfers-form__submit btn btn_primary" type="submit">						
+				Swap
+			</button>
+		</fieldset>						
+	</form>
+</div>
