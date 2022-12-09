@@ -34,29 +34,19 @@
       'className': 'header_inner'
     })
 
-    <main class="main">
-    
-      <section class="page-header">                        
-        <div class="wrapper">
-          
-          @@include('html/transfers-tabs.html', {
-            'setup': 'active',
-            'my-transfers': '',
-            'faq': ''
-          })
-
-        </div>                     
-      </section>
-
+    <main class="main">       
       <section class="page-container">
         <div class="wrapper">
-          
-          @@include('html/transfers-success.html', {})
+          <div class="transfers-wrapper">
+            
+            @@include('html/transfers-success.html', {})                         
 
+          </div>          
         </div>        
       </section>    
-    </main>
+    </main>    
     
+    <!-- @@include('html/alert.html', {})    -->
     @@include('html/footer.html', {})   
   </div>  
 
