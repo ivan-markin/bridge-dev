@@ -19,71 +19,72 @@ const popupCloseButtons = document.querySelectorAll('.popup__close');
 const popups = document.querySelectorAll('.popup');
 const estimatedTokenBtn = document.querySelector('.estimated-token-button');
 const walletButton = document.querySelector('.wallet-info-button');
+const faqItemHeaders = document.querySelectorAll('.faq__item-header');
 
 flsFunctions.isWebp();
 smoothscroll.polyfill();
 
 function closeBottomPopup(evt) {
-    evt.target.closest('.popup-bottom').classList.remove('active');        
+  evt.target.closest('.popup-bottom').classList.remove('active');        
 }
 
 function popupCloseHandler(evt) {
-    if (evt.target.classList.contains('popup')) {
-        evt.target.classList.remove('active');    
-    }
+  if (evt.target.classList.contains('popup')) {
+      evt.target.classList.remove('active');    
+  }
 
-    if (evt.target.classList.contains('popup__close')) {
-        evt.target.closest('.popup').classList.remove('active');
-    }
-    
-    document.body.classList.remove('fixed');
+  if (evt.target.classList.contains('popup__close')) {
+      evt.target.closest('.popup').classList.remove('active');
+  }
+  
+  document.body.classList.remove('fixed');
 }
 
 function filtersMobileHandler() {
-    const filtersPanel = document.querySelector('.filters-mobile-panel');
-    filtersPanel?.classList.toggle('active');
-    document.body.classList.toggle('fixed');
+  const filtersPanel = document.querySelector('.filters-mobile-panel');
+  filtersPanel?.classList.toggle('active');
+  document.body.classList.toggle('fixed');
 }
 
 function chooseTokenBtnHandler(event) {        
-    const popup = document.querySelector('#chooseTokenPopup');
-    event.preventDefault();
-    popup?.classList.add('active');
-    document.body.classList.add('fixed');
+  const popup = document.querySelector('#chooseTokenPopup');
+  event.preventDefault();
+  popup?.classList.add('active');
+  document.body.classList.add('fixed');
 }
 
 function collapseChooseTokenInput(event) {                
-    const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
-    event.target.classList.remove('active');
-    event.target.value = '';
-    // chooseTokenBtn?.classList.add('active');
-    popup.classList.remove('active');
+  const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
+  event.target.classList.remove('active');
+  event.target.value = '';
+  // chooseTokenBtn?.classList.add('active');
+  popup.classList.remove('active');
 }
 
 function showNetworksPopup(event) {
-    const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
-    
-    popup.classList.add('active');
-    !event.target.value && popup.classList.remove('active');
+  const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
+  
+  popup.classList.add('active');
+  !event.target.value && popup.classList.remove('active');
 }
 
 function collapseNetworksPopup(event) {
-    const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
-    popup.classList.remove('active');
+  const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
+  popup.classList.remove('active');
     event.target.value = '';
 }
 
 function collapseButtonHandler(evt) {
-    const advancedSettings = document.querySelector('.transfers-form__advanced-settings');
-    evt.preventDefault();
-    evt.target.classList.toggle('active');
-    advancedSettings?.classList.toggle('active');
+  const advancedSettings = document.querySelector('.transfers-form__advanced-settings');
+  evt.preventDefault();
+  evt.target.classList.toggle('active');
+  advancedSettings?.classList.toggle('active');
 }
 
 function headerSearchHandler() {
-    const searchPopup = document.querySelector('#searchPopup');
-    searchPopup?.classList.add('active');
-    document.body.classList.add('fixed');
+  const searchPopup = document.querySelector('#searchPopup');
+  searchPopup?.classList.add('active');
+  document.body.classList.add('fixed');
 }
 
 // function openSupportedLogosPopup(event) {
@@ -91,31 +92,38 @@ function headerSearchHandler() {
 // }    
 
 if (selectButtons) {
-    selectButtons.forEach(el => {
-        el.addEventListener('click', () => {
-            el.parentElement?.classList.toggle('active');
-        })
-    })        
+  selectButtons.forEach(el => {
+    el.addEventListener('click', () => {
+        el.parentElement?.classList.toggle('active');
+    })
+  })        
 }
 
 function routeLogosContainerHandler() {        
-    const containers = document.querySelectorAll('.route-logos');
+  const containers = document.querySelectorAll('.route-logos');
 
-    if (!containers) {
-        return;
-    }
+  if (!containers) {
+      return;
+  }
 
-    containers.forEach(el => {
-        const routeLogos = el.querySelectorAll('.route-logo');            
-        
-        routeLogos.forEach((el, i) => {                
-            el.style.transform = `translateX(${i * 100}%)`; 
-            el.style.left = `${i * -.625}vw`; 
-        })
+  containers.forEach(el => {
+    const routeLogos = el.querySelectorAll('.route-logo');            
+    
+    routeLogos.forEach((el, i) => {                
+        el.style.transform = `translateX(${i * 100}%)`; 
+        el.style.left = `${i * -.625}vw`; 
+    })
 
-        el.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
-    })                                                            
+    el.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
+  })                                                            
 }        
+
+function faqItemToggle(evt) {
+  const faqItems = document.querySelectorAll('.faq__item');
+  
+  // faqItems.forEach(el => el.classList.remove('active'));
+  evt.target.parentElement.classList.toggle('active');
+}
 
 filtersBtn?.addEventListener('click', filtersMobileHandler);
 filtersCloseBtn?.addEventListener('click', filtersMobileHandler);
@@ -123,53 +131,59 @@ filtersCloseBtn?.addEventListener('click', filtersMobileHandler);
 searchButton?.addEventListener('click', headerSearchHandler);
 
 popupCloseButtons.forEach(el => {
-    el.addEventListener('click', popupCloseHandler);
-    document.body.classList.remove('fixed');
+  el.addEventListener('click', popupCloseHandler);
+  document.body.classList.remove('fixed');
 })
 
 popups.forEach(el => {
-    el.addEventListener('click', popupCloseHandler);    
-    document.body.classList.remove('fixed');    
+  el.addEventListener('click', popupCloseHandler);    
+  document.body.classList.remove('fixed');    
 })
 
 menuButton?.addEventListener('click', flsFunctions.mobileMenuHandler().open);
 closeMenuButton?.addEventListener('click', flsFunctions.mobileMenuHandler().close);
 
 chooseTokenButtons?.forEach(el => {
-    el.addEventListener('click', chooseTokenBtnHandler);
+  el.addEventListener('click', chooseTokenBtnHandler);
 })
 
 selectDateInput?.addEventListener('click', () => {
-    const dateInputPopup = document.querySelector('.date-picker-popup');
-    dateInputPopup?.classList.add('active');
-    document.body.classList.add('fixed');
+  const dateInputPopup = document.querySelector('.date-picker-popup');
+  dateInputPopup?.classList.add('active');
+  document.body.classList.add('fixed');
 })
 
 document.addEventListener('keydown', (evt) => {
-    popups.forEach(el => {
-        if (evt.key === 'Escape') el.classList.remove('active');
-        document.body.classList.remove('fixed');
-    })        
+  popups.forEach(el => {
+      if (evt.key === 'Escape') el.classList.remove('active');
+      document.body.classList.remove('fixed');
+  })        
 })
 
 popupBackBtn?.addEventListener('click', closeBottomPopup);
 popupBottomBg?.addEventListener('click', closeBottomPopup);
 
 estimatedTokenBtn?.addEventListener('click', (evt) => {
-    const popup = document.querySelector('#routesPopup');        
-    evt.preventDefault();
-    popup?.classList.add('active');
-    document.body.classList.add('fixed');        
+  const popup = document.querySelector('#routesPopup');        
+  evt.preventDefault();
+  popup?.classList.add('active');
+  document.body.classList.add('fixed');        
 })
 
 advancedSettingsButton?.addEventListener('click', collapseButtonHandler);
 routeLogosContainerHandler();
 
 document.addEventListener('click', (evt) => {
-    console.log(evt.target);
+  console.log(evt.target);
 })  
 
 walletButton?.addEventListener('click', () => {
-    const popup = document.querySelector('#walletActionsPopup');
-    popup?.classList.add('active');
+  const popup = document.querySelector('#walletActionsPopup');
+  popup?.classList.add('active');
+})
+
+faqItemHeaders.forEach(el => {
+  el.addEventListener('click', (evt) => {
+    faqItemToggle(evt)
+  })
 })
