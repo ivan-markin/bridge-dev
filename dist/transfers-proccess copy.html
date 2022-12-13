@@ -485,7 +485,7 @@
 		</div>				
 	</div>
 </div>  
-  <div class="choose-wallet-popup popup active" id="chooseWalletPopup">
+  <div class="choose-wallet-popup popup" id="chooseWalletPopup">
 	<div class="popup__container">
 		<a class="popup__close" href="#"></a>
 		<h1 class="choose-wallet-popup__title popup__title">Connect to a Wallet</h1>
@@ -1199,7 +1199,7 @@
 	</a>
 </div>
 	
-	<div class="transfers transfers_success">					
+	<div class="transfers transfers_proccess">					
 		
 		
 
@@ -1235,8 +1235,8 @@
 						<img src="img/tokens-logos/network.png" width="14" height="14" alt="">
 						<img src="img/tokens-logos/network-2.svg" width="14" height="14" alt="">
 					</div>
-					<!-- <img class="transfers__arrow" src="img/transfer-arrow.svg" width="24" height="16" alt=""> -->
-					<img class="transfers__success-icon" src="img/proccess-success-icon.svg" width="17" height="17" alt="">
+					<img class="transfers__arrow" src="img/transfer-arrow.svg" width="24" height="16" alt="">
+					<!-- <img class="transfers__success-icon" src="img/proccess-success-icon.svg" width="17" height="17" alt=""> -->
 				</div>
 				
 				<div class="token-cnt">
@@ -1256,29 +1256,18 @@
 			
 			<div class="transfers__notification transfers__notification_success">
 	<span>Your wallet is connected to the Avalanche network</span>
-</div>		
-			<div class="success-message">
-	<span class="success-message__title">You will recieve in a few minutes</span>
-	<div class="success-message__value">
-		<span class="success-message__value-main">
-			4.8 AVAX
-			<span>on Polygon</span>
-		</span>
-		<span class="success-message__value-secondary">≈$5.63</span>
-	</div>
-	<div class="success-message__links">
-		<a href="">View transaction</a>
-		<a href="">Repeat the swap</a>
-		<a href="">Share experience</a>
-	</div>
 </div>
-					
+			<div class="transfers__notification transfers__notification_proccess">
+	<span class="loader-blue"></span>
+	<span>Token approve required</span>
+</div>	
+			
 		</div>	
 		
 		<a class="transfers__telegram-link" href="">
 			<img src="img/telegram-icon_small.svg" width="14" height="12" alt="">
 			Any questions — contact support
-		</a>	
+		</a>
 	</div>
 
 	<span class="transfers-container__subscription">Open beta: please use at your own risk.</span>

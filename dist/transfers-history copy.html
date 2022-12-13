@@ -1163,9 +1163,9 @@
         <div class="wrapper">
           <div class="transfers-wrapper">
             
-            <div class="transfers-container">			
-	
-	<div class="transfers__tabs">
+            <div class="history">
+
+              <div class="transfers__tabs">
 	<a href="" class="transfers__tab active">
 		<span>
 			<svg width="20" height="20" viewBox="0 0 20 20" fill="#292D32" xmlns="http://www.w3.org/2000/svg">
@@ -1198,92 +1198,249 @@
 		</span>
 	</a>
 </div>
-	
-	<div class="transfers transfers_success">					
-		
-		
 
-		<div class="transfers__content">
-			<div class="transfers__header">
-				<button class="back-btn"></button>
-				<div class="transfers__title-block">
-					<h1 class="transfers__title">Swap process</h1>
-					<div class="transfers__trx-id">
-						<span>Trx ID:</span>
-						<span>1089wf6</span>
-					</div>
-				</div>
-				<span class="loader-dark"></span>
-			</div>
-			<div class="transfers__swaping-tokens">
-				<div class="token-cnt">
-	<div class="token-cnt__icon">
-		<img class="token-cnt__icon-token" src="img/tokens-logos/token.png" width="32" height="32" alt="">
-		<img class="token-cnt__icon-network" src="img/tokens-logos/network.png" width="14" height="14" alt="">
-	</div>
-	<div class="token-cnt__info">
-		<span class="token-cnt__value">5.0000 USDT</span>
-		<div class="token-cnt__caption">
-			<span>$5.63</span>
-			<span>on&nbsp;Avalanche</span>
-		</div>
-	</div>
-</div>
-				
-				<div class="transfers__indicator">
-					<div class="transfers__indicator-networks">
-						<img src="img/tokens-logos/network.png" width="14" height="14" alt="">
-						<img src="img/tokens-logos/network-2.svg" width="14" height="14" alt="">
-					</div>
-					<!-- <img class="transfers__arrow" src="img/transfer-arrow.svg" width="24" height="16" alt=""> -->
-					<img class="transfers__success-icon" src="img/proccess-success-icon.svg" width="17" height="17" alt="">
-				</div>
-				
-				<div class="token-cnt">
-	<div class="token-cnt__icon">
-		<img class="token-cnt__icon-token" src="img/tokens-logos/token.png" width="32" height="32" alt="">
-		<img class="token-cnt__icon-network" src="img/tokens-logos/network.png" width="14" height="14" alt="">
-	</div>
-	<div class="token-cnt__info">
-		<span class="token-cnt__value">5.0000 USDT</span>
-		<div class="token-cnt__caption">
-			<span>$5.63</span>
-			<span>on&nbsp;Avalanche</span>
-		</div>
-	</div>
-</div>
-			</div>
-			
-			<div class="transfers__notification transfers__notification_success">
-	<span>Your wallet is connected to the Avalanche network</span>
-</div>		
-			<div class="success-message">
-	<span class="success-message__title">You will recieve in a few minutes</span>
-	<div class="success-message__value">
-		<span class="success-message__value-main">
-			4.8 AVAX
-			<span>on Polygon</span>
-		</span>
-		<span class="success-message__value-secondary">≈$5.63</span>
-	</div>
-	<div class="success-message__links">
-		<a href="">View transaction</a>
-		<a href="">Repeat the swap</a>
-		<a href="">Share experience</a>
-	</div>
-</div>
-					
-		</div>	
-		
-		<a class="transfers__telegram-link" href="">
-			<img src="img/telegram-icon_small.svg" width="14" height="12" alt="">
-			Any questions — contact support
-		</a>	
-	</div>
+              <div class="history__header">
+                <h1 class="history__title">Swap history</h1>
+              </div>
+              <div class="history__container">
+                <section class="history__section">
+                  <div class="history__section-header">
+                    <h2 class="history__section-title">Pending execution</h2>
+                    <button class="show-all-btn">Show all</button>
+                  </div>
+                  <div class="history__items">
+                    <div class="history__item">
+                      <span class="history__item-alert">
+                        Transaction is not signed
+                        <img src="./img/alert-icon_yellow.svg" alt="">
+                      </span>
+                      <div class="history__item-header">
+                        <span>09 Aug, 10:56</span>
+                        <span class="history__item-id">
+                          <span>Trx ID:1089wf6</span>
+                        </span>                        
+                      </div>
+                      <div class="history__item-content">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="history__item-transfer-icon" src="./img/transfer-arrow_history.svg" width="20" height="8" alt="">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history__item">
+                      <span class="history__item-alert">
+                        Transaction is not signed
+                        <img src="./img/alert-icon_yellow.svg" alt="">
+                      </span>
+                      <div class="history__item-header">
+                        <span>09 Aug, 10:56</span>
+                        <span class="history__item-id">
+                          <span>Trx ID:1089wf6</span>
+                        </span>                        
+                      </div>
+                      <div class="history__item-content">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="history__item-transfer-icon" src="./img/transfer-arrow_history.svg" width="20" height="8" alt="">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history__item">
+                      <span class="history__item-alert">
+                        Waiting for transaction
+                        <img src="img/alert-icon_yellow.svg" alt="">
+                      </span>
+                      <div class="history__item-header">
+                        <span>09 Aug, 10:56</span>
+                        <span class="history__item-id">
+                          <span>Trx ID:1089wf6</span>
+                        </span>                        
+                      </div>
+                      <div class="history__item-content">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="history__item-transfer-icon" src="./img/transfer-arrow_history.svg" width="20" height="8" alt="">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
-	<span class="transfers-container__subscription">Open beta: please use at your own risk.</span>
-</div>                         
+                <section class="history__section">
+                  <div class="history__section-header">
+                    <h2 class="history__section-title">Completed</h2>
+                    <button class="show-all-btn">Show all</button>
+                  </div>
+                  <div class="history__items">                    
+                    <div class="history__item history__item_completed">
+                      <div class="history__item-header">
+                        <span>09 Aug, 10:56</span>
+                        <span class="history__item-id">
+                          <span>Trx ID:1089wf6</span>
+                        </span>
+                      </div>
+                      <div class="history__item-content">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="history__item-transfer-icon" src="./img/transfer-arrow_history.svg" width="20" height="8" alt="">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history__item history__item_completed">
+                      <div class="history__item-header">
+                        <span>09 Aug, 10:56</span>
+                        <span class="history__item-id">
+                          <span>Trx ID:1089wf6</span>
+                        </span>
+                      </div>
+                      <div class="history__item-content">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="history__item-transfer-icon" src="./img/transfer-arrow_history.svg" width="20" height="8" alt="">
+                        <div class="token-cnt">
+                          <div class="token-cnt__icon">
+                            <img class="token-cnt__icon-token" src="img/tokens-logos/token.png" alt="">
+                            <img class="token-cnt__icon-network" src="img/tokens-logos/network.png" alt="">
+                          </div>
+                          <div class="token-cnt__info">
+                            <span class="token-cnt__value">
+                              5.0000 USDT
+                            </span>
+                            <div class="token-cnt__caption">
+                              <span>on Avalanche</span>
+                              <span>$5.63</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
 
+            <span class="transfers-container__subscription">Open beta: please use at your own risk.</span>
           </div>          
         </div>        
       </section>    

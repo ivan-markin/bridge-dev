@@ -20,6 +20,7 @@ const popups = document.querySelectorAll('.popup');
 const estimatedTokenBtn = document.querySelector('.estimated-token-button');
 const walletButton = document.querySelector('.wallet-info-button');
 const faqItemHeaders = document.querySelectorAll('.faq__item-header');
+const deleteSwapBtn = document.querySelector('.history__remove');
 
 flsFunctions.isWebp();
 smoothscroll.polyfill();
@@ -186,4 +187,9 @@ faqItemHeaders.forEach(el => {
   el.addEventListener('click', (evt) => {
     faqItemToggle(evt)
   })
+})
+
+deleteSwapBtn.addEventListener('click', () => {
+  const deleteHistoryPopup = document.querySelector('.delete-history-popup');
+  deleteHistoryPopup.classList.add('active');
 })

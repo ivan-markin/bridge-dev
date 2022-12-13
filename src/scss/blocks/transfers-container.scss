@@ -8,10 +8,13 @@
 	margin: 0 auto;
 
 	&__subscription {
+		display: block;
+		width: fit-content;
 		font-size: 14px;
 		color: var(--primary-blue);
 		background: #EBF5FF;
 		border-radius: 6px;
 		padding: 4px 7px;
+		margin: 0 auto;
 	}
 }
