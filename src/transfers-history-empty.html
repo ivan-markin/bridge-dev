@@ -20,7 +20,11 @@
             
             <div class="history">
 
-              @@include('html/transfers-tabs.html', {})
+              @@include('html/transfers-tabs.html', {
+                'transfers': '', 
+                'history': 'active', 
+                'faq': '', 
+              })
 
               <div class="history__header" style="justify-content: center;">
                 <h1 class="history__title">Swap history</h1>

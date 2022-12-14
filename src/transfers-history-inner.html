@@ -22,10 +22,14 @@
             
             <div class="history">
 
-              @@include('html/transfers-tabs.html', {})
+              @@include('html/transfers-tabs.html', {
+                'transfers': '', 
+                'history': 'active', 
+                'faq': '', 
+              })
 
               <div class="history__header">
-                <button class="back-btn"></button>
+                <a href="transfers-history.html" class="back-btn"></a>
                 <h1 class="history__title">Completed swaps</h1>
                 <button class="history__remove remove-btn"></button>
               </div>

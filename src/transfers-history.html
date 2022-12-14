@@ -20,7 +20,11 @@
             
             <div class="history">
 
-              @@include('html/transfers-tabs.html', {})
+              @@include('html/transfers-tabs.html', {
+                'transfers': '', 
+                'history': 'active', 
+                'faq': '', 
+              })
 
               <div class="history__header" style="justify-content: center;">
                 <h1 class="history__title">Swap history</h1>
@@ -29,7 +33,7 @@
                 <section class="history__section">
                   <div class="history__section-header">
                     <h2 class="history__section-title">Pending execution</h2>
-                    <button class="show-all-btn">Show all</button>
+                    <a href="transfers-history-inner.html" class="show-all-btn">Show all</a>
                   </div>
                   <div class="history__items">
                     <div class="history__item">
@@ -173,7 +177,7 @@
                 <section class="history__section">
                   <div class="history__section-header">
                     <h2 class="history__section-title">Completed</h2>
-                    <button class="show-all-btn">Show all</button>
+                    <a href="transfers-history-inner.html" class="show-all-btn">Show all</a>
                   </div>
                   <div class="history__items">                    
                     <div class="history__item history__item_completed">
