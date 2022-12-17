@@ -16,8 +16,15 @@
 	&__header {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		position: relative;
 		padding: 20px 0 24px;
+
+		.back-btn {
+			position: absolute;
+			left: 0;
+			top: 25px;
+		}
 	}
 
 	&__title {
@@ -66,17 +73,35 @@
 		position: relative;
 		padding: 8px 20px 10px;		
 
-		&_completed {		
-			
+		&_completed,
+		&_rejected,
+		&_pending {
 			&::after {
 				content: '';
 				width: 18px;
-				height: 18px;
-				background: url('../../img/completed-icon.svg') no-repeat center;
+				height: 18px;				
 				background-size: contain;
 				position: absolute;
 				top: 8px;
 				right: 8px;
+			}
+		}
+		
+		&_completed {					
+			&::after {				
+				background: url('../../img/completed-icon.svg') no-repeat center;				
+			}
+		}
+
+		&_rejected {
+			&::after {				
+				background: url('../../img/rejected-icon.svg') no-repeat center;				
+			}
+		}
+
+		&_pending {
+			&::after {				
+				background: url('../../img/alert-icon_yellow.svg') no-repeat center;				
 			}
 		}
 
