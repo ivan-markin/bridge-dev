@@ -11148,7 +11148,10 @@ button.swiper-pagination-bullet {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  padding: 12px 8px 20px 52px;
+  padding: 12px 16px 20px 52px;
+}
+.alert_success {
+  background: #24C38E url("../../img/success-icon_white.svg") no-repeat 13px 15px;
 }
 .alert.active {
   z-index: 9999;
