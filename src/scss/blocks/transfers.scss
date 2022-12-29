@@ -414,9 +414,9 @@
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 1.3;
-		height: 46px;
+		min-height: 46px;
 		border-radius: 12px;
-		padding: 0 12px;
+		padding: 8px 12px;
 
 		&:not(:last-child) {
 			margin-bottom: 8px;
@@ -424,7 +424,7 @@
 
 		&_success {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			gap: 6px;
 			background: #EBFFF4;			
 
@@ -440,7 +440,7 @@
 
 		&_attention {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			gap: 7px;
 			background: #FEF7EE;
 			border: #F2C005 2px solid;

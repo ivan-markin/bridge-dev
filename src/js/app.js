@@ -23,6 +23,10 @@ const faqItemHeaders = document.querySelectorAll('.faq__item-header');
 const deleteSwapBtn = document.querySelector('.history__remove');
 const innerPopupCloseButtons = document.querySelectorAll('.inner-popup-close');
 const switchNetworkBtn = document.querySelector('.wallet-actions-popup__switch-network');
+const tokensList = document.querySelector('.choose-token-popup__tokens-list');
+const chooseTokenPopup = document.querySelector('#chooseTokenPopup');
+const root = document.documentElement;
+const moreBtn = document.querySelector('#moreTokensBtn');
 
 flsFunctions.isWebp();
 smoothscroll.polyfill();
@@ -200,8 +204,8 @@ if (innerPopupCloseButtons) {
 }
 
 if (switchNetworkBtn) {
-  switchNetworkBtn.addEventListener('click', () => {
-    const popup = document.querySelector('.switch-network-popup');
+  switchNetworkBtn.addEventListener('click', (evt) => {
+    const popup = evt.target.parentElement.querySelector('.switch-network-popup');
     popup.classList.add('active');
   })
 }
@@ -210,5 +214,15 @@ if (deleteSwapBtn) {
   deleteSwapBtn.addEventListener('click', () => {
     const deleteHistoryPopup = document.querySelector('.delete-history-popup');
     deleteHistoryPopup.classList.add('active');
+  })
+}
+
+root.style.setProperty('--tokens-list-height', chooseTokenPopup.offsetHeight - 164 + 'px');
+
+if (moreBtn) {
+  moreBtn.addEventListener('click', (evt) => {
+    const popup = evt.target.closest('.popup').querySelector('.switch-network-popup');
+    popup.style.height = '100vh';
+    popup.classList.add('active');
   })
 }

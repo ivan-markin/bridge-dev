@@ -12,12 +12,17 @@
 	transition: .3s all;
 	padding: 12px 16px 20px 52px;
 
+	@media (max-width: 768px) {
+		width: calc(100vw - 40px);
+		bottom: 82px;
+	}
+
 	&_success {
 		background: #24C38E url('../../img/success-icon_white.svg') no-repeat 13px 15px;
 	}
 
 	&.active {
-		z-index: 9999;
+		z-index: 9999999;
 		opacity: 1;
 		visibility: visible;
 	}

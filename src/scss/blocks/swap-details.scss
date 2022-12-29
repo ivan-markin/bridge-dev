@@ -149,10 +149,13 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 24px;
-			height: 24px;
-			border: 1px solid #E2E6EE;
-			border-radius: 4px;
+			// width: 24px;			
+			// border: 1px solid #E2E6EE;
+			// border-radius: 4px;
+
+			img {
+				height: 16px;
+			}
 		}
 
 		&-caption {

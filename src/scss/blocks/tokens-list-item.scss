@@ -34,6 +34,10 @@
 		font-weight: 600;
 		font-size: 16px;
 		margin-bottom: 4px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 	}
 
 	&__network {		
@@ -41,6 +45,10 @@
 		align-items: center;
 		font-size: 14px;	
 		color: #4C76AA;
+
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 
 	&__value {
@@ -48,12 +56,20 @@
 		font-size: 16px;
 		color: #142438;
 		margin-bottom: 4px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 	}
 
 	&__currency {
 		font-weight: 500;
 		font-size: 14px;
-		color: #4C76AA;		
+		color: #4C76AA;	
+		
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 
 	&__token {
