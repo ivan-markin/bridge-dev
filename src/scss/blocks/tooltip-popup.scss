@@ -49,12 +49,24 @@
 		max-width: 633px;
 		padding: 20px;
 
+		@media (max-width: 768px) {
+			position: fixed;
+			left: 20px;
+			top: 130px;
+			transform: none;
+			width: calc(100vw - 40px);
+		}
+
 		&::after {
 			width: 24px;
 			height: 16px;		
 			background: url('../img/tooltip-pointer_white.svg') no-repeat center;		
 			bottom: -14px;
 			left: 28px;	
+
+			@media (max-width: 768px) {
+				display: none;
+			}
 		}	
 	}
 
