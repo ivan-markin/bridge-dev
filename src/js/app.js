@@ -21,6 +21,8 @@ const estimatedTokenBtn = document.querySelector('.estimated-token-button');
 const walletButton = document.querySelector('.wallet-info-button');
 const faqItemHeaders = document.querySelectorAll('.faq__item-header');
 const deleteSwapBtn = document.querySelector('.history__remove');
+const innerPopupCloseButtons = document.querySelectorAll('.inner-popup-close');
+const switchNetworkBtn = document.querySelector('.wallet-actions-popup__switch-network');
 
 flsFunctions.isWebp();
 smoothscroll.polyfill();
@@ -112,10 +114,10 @@ function routeLogosContainerHandler() {
     
     routeLogos.forEach((el, i) => {                
         el.style.transform = `translateX(${i * 100}%)`; 
-        el.style.left = `${i * -.625}vw`; 
+        el.style.left = `${i * -12}px`; 
     })
 
-    el.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
+    el.style.width = routeLogos.length * 26 - (routeLogos.length - 1) * 12 + 'px'; 
   })                                                            
 }        
 
@@ -189,7 +191,24 @@ faqItemHeaders.forEach(el => {
   })
 })
 
-deleteSwapBtn.addEventListener('click', () => {
-  const deleteHistoryPopup = document.querySelector('.delete-history-popup');
-  deleteHistoryPopup.classList.add('active');
-})
+if (innerPopupCloseButtons) {
+  innerPopupCloseButtons.forEach(el => {
+    el.addEventListener('click', (evt) => {
+      evt.target.closest('.inner-popup').classList.remove('active');
+    })
+  })
+}
+
+if (switchNetworkBtn) {
+  switchNetworkBtn.addEventListener('click', () => {
+    const popup = document.querySelector('.switch-network-popup');
+    popup.classList.add('active');
+  })
+}
+
+if (deleteSwapBtn) {
+  deleteSwapBtn.addEventListener('click', () => {
+    const deleteHistoryPopup = document.querySelector('.delete-history-popup');
+    deleteHistoryPopup.classList.add('active');
+  })
+}

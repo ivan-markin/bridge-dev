@@ -9,6 +9,12 @@
 	cursor: pointer;
 	padding: 4px;
 
+	@media (max-width: 768px) {
+		border-radius: 8px;
+		gap: 3px;
+		padding: 3px;
+	}
+
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -18,10 +24,20 @@
 		border-radius: 8px;
 		background-color: #fff;
 		position: relative;		
+
+		@media (max-width: 768px) {
+			width: 26px;
+			height: 26px;
+			border-radius: 6px;
+		}
 	}
 
 	&__main-logo {
 		width: 24px;
+
+		@media (max-width: 768px) {
+			width: 18px;			
+		}
 	}
 	
 	&__network-logo {		
@@ -32,6 +48,11 @@
 		min-width: 14px;
 		bottom: -2px;
 		right: -3px;
+
+		@media (max-width: 768px) {
+			width: 10px;			
+			min-width: 10px;
+		}
 	}
 
 	&__wallet-num {
@@ -43,6 +64,11 @@
 		border-radius: 8px;
 		padding: 0 6px 0 10px;
 
+		@media (max-width: 768px) {
+			height: 26px;
+			border-radius: 6px;
+		}
+
 		div {
 			display: flex;
 			flex-direction: column;			
@@ -50,13 +76,21 @@
 
 		img {
 			width: 24px;	
+
+			@media (max-width: 768px) {
+				width: 14px;
+			}
 		}
 	}
 
 	&__num {
 		font-size: 16px;
 		font-weight: 500;
-		color: #003980;		
+		color: #003980;	
+		
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 
 	&__network {

@@ -110,6 +110,9 @@
 @import './blocks/copy-btn.scss';
 @import './blocks/remove-btn.scss';
 @import './blocks/delete-history-popup.scss';
+@import './blocks/switch-network-popup.scss';
+@import './blocks/popup-back-btn.scss';
+@import './blocks/loader-large.scss';
 
 *,
 *::before,
@@ -150,6 +153,11 @@ fieldset {
   min-height: 100vh;
   background: url('../img/page-bg.jpg') no-repeat center top;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    min-height: auto;
+    background: none;
+  }
 }
 
 .wrap {
@@ -167,12 +175,7 @@ fieldset {
   width: 100%;
   max-width: 1280px;  
   padding: 0 40px;
-  margin: 0 auto;
-
-  @media (max-width: 1280px), (min-width: 1920px) {
-    max-width: none;
-    padding: 0;
-  }  
+  margin: 0 auto;   
 
   @media (min-width: 1920px) {
     max-width: 1920px;    

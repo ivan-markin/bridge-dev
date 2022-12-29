@@ -16,14 +16,17 @@
 				<div class="transfers__title-block">
 					<h1 class="transfers__title">Swap process</h1>
 					<div class="transfers__trx-id">
-						<span>Trx ID:</span>
+						<span>ID:</span>
 						<span>1089wf6</span>
+						<button class="copy-btn"></button>
 					</div>
 				</div>
 				<span class="loader-dark"></span>
 			</div>
 			<div class="transfers__swaping-tokens">
-				@@include('token-container.html', {})
+				@@include('token-container.html', {
+					'column': 'column'
+				})
 				
 				<div class="transfers__indicator">
 					<div class="transfers__indicator-networks">
@@ -34,7 +37,9 @@
 					<img class="transfers__success-icon" src="@img/proccess-success-icon.svg" width="17" height="17" alt="">
 				</div>
 				
-				@@include('token-container.html', {})
+				@@include('token-container.html', {
+					'column': 'column'
+				})
 			</div>
 			
 			@@include('transfer-success-notification.html', {})		

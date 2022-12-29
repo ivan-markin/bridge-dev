@@ -2,6 +2,11 @@
 
 	&__title {
 		font-size: 1.25vw;
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+			margin-bottom: 16px;
+		}
 	}
 	
 	&__wallet-item {
@@ -12,17 +17,37 @@
 		border-radius: .78vw;
 		height: 2.9vw;
 		width: 100%;
-		font-size: .73vw;
+		font-size: 14px;
 		background: none;
 		cursor: pointer;
-		padding: 0 .83vw;
+		padding: 0 15px 0 19px;
+
+		@media (max-width: 768px) {
+			height: 56px;
+			border-radius: 18px;
+		}
+
+		&::after {
+			content: '';
+			width: 5px;
+			height: 9px;
+			background: url('../../img/arrow-right.svg') no-repeat center;
+			background-size: contain;
+			flex: none;
+		}
 
 		&:not(:last-of-type) {
-			margin-bottom: 1.25vw;
+			margin-bottom: 10px;
 		}
 
 		img {
-			height: 1.25vw;
+			width: 30px;
+		}
+
+		&-title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
 		}
 	}
 
@@ -33,7 +58,23 @@
 		margin: 0 0 1.67vw;
 	}
 
+	&__loading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6px;
+		font-size: 16px;
+		font-weight: 600;
+		color: var(--primary-blue);
+		padding-top: 50px;
+	}
+
 	.popup__container {
 		width: 23.33vw;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			min-height: 280px;
+		}
 	}
 }

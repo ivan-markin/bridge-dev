@@ -25,7 +25,12 @@
     font-weight: 800;
     color: white;  
     border: none;  
-    padding: 0 2.34vw;   
+    padding: 0 2.34vw;  
+    
+    @media (max-width: 768px) {
+      height: 56px;
+      font-size: 16px;
+    }
 
     &:disabled {
       background-color: #EDF2F4;
@@ -63,13 +68,20 @@
   }
   
   &_outlined-red {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #142438;
     height: 52px;
     border: #FF0032 1px solid;
     border-radius: 18px;
-    background: none;
-    color: #FF0032;
+    background: none;    
     font-size: 15px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      border-radius: 10px;
+    }
 
     &:hover {
       background: none;

@@ -6,15 +6,7 @@
 	&__main {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;		
-
-		@media (max-width: 1920px) {
-			gap: .83vw;			
-		}
-
-		@media (min-width: 1921px) {			
-			margin-bottom: 1.3vw;
-		}
+		gap: 16px;			
 	}
 
 	&__main-inputs {
@@ -23,47 +15,28 @@
 		width: 100%;
 		gap: 8px;
 		position: relative;		
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			gap: .3125vw;
-			width: auto;
-			margin-right: .83vw;			
-		}
 	}
 
 	&__main-input {
 		display: flex;		
-		flex-direction: column;
-		flex: auto;
+		flex-direction: column;		
 		width: 100%;		
 		background: #EFF6FC;
 		border: 1px solid #E2E6EE;
-		padding: 11px 16px 14px 20px;	
+		padding: 8px 20px;	
 
 		&_from {			
-			border-radius: 16px 16px 0 0;		
-			
-			@media (max-width: 1280px), (min-width: 1920px) {
-				border-radius: .83vw .83vw 0 0;
-			}
+			border-radius: 16px 16px 0 0;			 
 		}
 
 		&_to {			
 			border-radius: 0 0 16px 16px;	
-			
-			@media (max-width: 1280px), (min-width: 1920px) {
-				border-radius: 0 0 .83vw .83vw;
-			}
 		}		
 	}	
 
 	&__main-input-name {
 		font-size: 14px;
 		font-weight: 800;	
-		
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .73vw;
-		}
 	}
 
 	&__main-input-head {
@@ -73,21 +46,12 @@
 	}
 
 	&__main-input-balance {
-		margin-bottom: 8px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			margin-bottom: .4vw;
-		}
+		// margin-bottom: 8px;
 	}
 
 	&__balance-title {
 		font-size: 12px;
 		color: #9599AD;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .73vw;
-			margin-bottom: .4vw;
-		}
 	}
 
 	&__balance-value {
@@ -112,6 +76,11 @@
 			background-color: transparent;
 			padding-right: 20px;
 
+			@media (max-width: 768px) {
+				font-size: 16px;
+				font-weight: 700;
+			}
+
 			&::placeholder {
 				color: #D3D5E0;
 				opacity: 1;
@@ -125,11 +94,11 @@
 
 	&__equivalent {
 		flex: none;
-		font-size: .73vw;
+		font-size: 14px;
 		color: #989EB1;
 
-		@media (min-width: 1920px) {
-			font-size: 1vw;
+		@media (max-width: 768px) {
+			font-size: 12px;
 		}
 	}
 
@@ -143,20 +112,12 @@
 		gap: 32px;	
 		border-top: 1px solid rgba(187, 197, 211, 0.32);
 		padding-top: 1.3vw;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			gap: 1.67vw;
-		}
 	}
 
 	&__filters-container {
 		display: flex;
 		align-items: center;
 		gap: 8px;		
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			gap: .42vw;
-		}
 
 		&_wrap {
 			flex-wrap: wrap;
@@ -174,16 +135,8 @@
 		justify-content: flex-start;
 		margin-right: 9px;
 
-		@media (max-width: 1280px), (min-width: 1920px) {
-			margin-right: .47vw;
-		}
-
 		.info-button {
 			margin-right: 5px;
-
-			@media (max-width: 1280px), (min-width: 1920px) {
-				margin-right: .26vw;
-			}
 		}
 	}
 	
@@ -191,40 +144,22 @@
 		font-size: 16px;
 		font-weight: 500;
 		margin-right: 6px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .83vw;
-			margin-right: .3125vw;
-		}
 	}
 
 	&__switch-title {
 		font-size: 18px;
 		font-weight: 700;
 		margin-right: 35px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .9375vw;
-			margin-right: 1.82vw;
-		}
 	}
 
 	&__advanced-settings {
 		display: none;		
 		margin-top: 42px;
 
-		@media (max-width: 1280px), (min-width: 1920px) {
-			margin-top: 2.19vw;
-		}
-
 		&.active {
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
-
-			@media (max-width: 1280px), (min-width: 1920px) {
-				gap: 1.04vw;
-			}
 		}				
 	}
 
@@ -240,13 +175,6 @@
 		position: relative;
 		padding: 0 20px;
 		margin-bottom: 32px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			border-radius: .78vw;
-			height: 2.92vw;
-			padding: 0 1.04vw;
-			margin-bottom: 1.67vw;
-		}
 	}
 
 	&__route-logos {
@@ -268,10 +196,6 @@
 		display: flex;
 		align-items: center;
 		gap: 14px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			gap: .73vw;
-		}
 	}
 
 	&__estimated-parameter {
@@ -279,11 +203,6 @@
 		align-items: center;
 		gap: 4px;
 		font-size: 14px;
-
-		@media (max-width: 1280px), (min-width: 1920px) {
-			gap: .2vw;
-			font-size: .73vw;
-		}
 	}
 
 	&__estimated-token-title {
@@ -293,10 +212,6 @@
 		font-weight: 800;
 		margin-left: auto;
 
-		@media (max-width: 1280px), (min-width: 1920px) {
-			font-size: .94vw;
-		}
-
 		&::after {
 			content: '';
 			width: 6px;
@@ -304,10 +219,6 @@
 			background: url('../img/right-arrow.svg') no-repeat center;
 			background-size: contain;
 			margin-left: 15px;
-			
-			@media (max-width: 1280px), (min-width: 1920px) {
-				margin-left: .78vw;
-			}
 		}
 	}
 

@@ -1,21 +1,34 @@
 <div class="choose-wallet-popup popup" id="chooseWalletPopup">
 	<div class="popup__container">
 		<a class="popup__close" href="#"></a>
-		<h1 class="choose-wallet-popup__title popup__title">Connect to a Wallet</h1>
-		<p class="choose-wallet-popup__description">
-			By connecting a wallet, you agree to <a class="text-link" href="">Terms&nbsp;of&nbsp;Service</a> and acknowledge that you have read and understand the <a class="text-link" href="">disclaimer</a>.
-		</p>     
+		<h1 class="choose-wallet-popup__title popup__title">Connect to a Wallet</h1>		
+		
+		<!-- Loader -->
+		
+		<!-- <div class="choose-wallet-popup__loading">
+			<span class="loader-large"></span>
+			<span>Loading...</span>
+		</div> -->
+
+		<!--  -->
+		
 		<button class="choose-wallet-popup__wallet-item">
-			<span>Metamask</span>
-			<img src="@img/metamask-logo.png" alt="">
+			<div class="choose-wallet-popup__wallet-item-title">
+				<img src="@img/metamask-logo.png" alt="">
+				<span>Metamask</span>				
+			</div>			
 		</button>
 		<button class="choose-wallet-popup__wallet-item">
-			<span>BlockWallet</span>
-			<img src="@img/block-wallet-logo.png" alt="">
+			<div class="choose-wallet-popup__wallet-item-title">
+				<img src="@img/block-wallet-logo.png" alt="">
+				<span>BlockWallet</span>	
+			</div>					
 		</button>
 		<button class="choose-wallet-popup__wallet-item">
-			<span>imToken</span>
-			<img src="@img/im-token-logo.png" alt="">
+			<div class="choose-wallet-popup__wallet-item-title">
+				<img src="@img/im-token-logo.png" alt="">
+				<span>imToken</span>				
+			</div>			
 		</button>
 	</div>
 </div>

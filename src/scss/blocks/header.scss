@@ -3,6 +3,16 @@
   position: relative;  
   padding: 0 73px;
 
+  @media (max-width: 1280px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    background: url('../../img/header-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 0 20px;
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -21,17 +31,32 @@
       max-width: 1920px;      
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
       max-width: none;
-      height: 50px;
       padding: 0;
     }
+
+    @media (max-width: 768px) {
+      max-width: none;
+      height: 50px;      
+      padding: 0;
+    }
+  }
+
+  &__content-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   &_inner {
     display: flex;
     align-items: center;
     height: 76px;
+
+    @media (max-width: 768px) {      
+      height: 82px;            
+    }
   }
 
   &__logo {
@@ -110,9 +135,9 @@
   // }
 
   &__menu-button {
-    width: 24px;
-    height: 18px;
-    background: transparent url('../img/menu-burger-icon.svg') no-repeat center;    
+    width: 20px;
+    height: 14px;
+    background: transparent url('../img/menu-icon.svg') no-repeat center;    
     background-size: contain;
     border: none;
     cursor: pointer;

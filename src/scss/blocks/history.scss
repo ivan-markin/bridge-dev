@@ -10,7 +10,8 @@
 
 	@media (max-width: 768px) {		
 		max-width: 470px;
-		width: 90%;
+		width: 100%;
+		padding: 0 15px 20px;		
 	}		
 
 	&__header {
@@ -33,6 +34,10 @@
 		line-height: 1;
 		width: fit-content;
 		margin: 0;
+
+		@media (max-width: 768px) {
+			font-size: 20px;
+		}
 
 		span {
 			color: var(--primary-blue);
@@ -58,6 +63,10 @@
 			line-height: 1;			
 			color: #9599AD;
 			margin: 0;
+
+			@media (max-width: 768px) {
+				font-size: 14px;
+			}
 		}
 	}
 
@@ -71,7 +80,7 @@
 		border: #EAEEFB 1px solid;
 		border-radius: 12px;
 		position: relative;
-		padding: 8px 20px 10px;		
+		padding: 8px 8px 8px 12px;		
 
 		&_completed,
 		&_rejected,
