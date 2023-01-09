@@ -118,21 +118,18 @@
     }
   }
 
-  // &__cta.btn_middle {
-  //   font-size: 1.04vw;
-  //   height: 2.7vw;  
-  //   padding: 0 1.35vw;  
-    
-  //   @media (min-width: 1921px) {      
-  //     font-size: 20px;
-  //     height: 52px;    
-  //     padding: 0 26px;
-  //   }
+  &__cta.btn_middle {
+    min-width: 205px;
 
-  //   @media (max-width: 768px) {
-  //     display: none;
-  //   }
-  // }
+    @media (max-width: 768px) {
+      font-size: 12px;
+      font-weight: 800;
+      height: 32px;  
+      min-width: auto;
+      border-radius: 8px;
+      padding: 0 18px; 
+    }
+  }
 
   &__menu-button {
     width: 20px;
