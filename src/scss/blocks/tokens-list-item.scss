@@ -6,6 +6,12 @@
 
 	&:not(:last-child) {
 		border-bottom: 1px solid #F4F6FB;
+		padding-bottom: 16px;
+
+		@media (max-width: 768px) {
+			border: none;
+			padding: 0;
+		}
 	}
 
 	&__left {

@@ -12,6 +12,10 @@
 		padding: 25px;		
 	}	
 
+	@media (max-width: 360px) {						
+		padding: 25px 16px;		
+	}
+
 	&::before {
 		content: '';
 		width: calc(100% - 4px);
@@ -32,6 +36,10 @@
 
 		@media (max-width: 768px) {
 			width: calc(100% - 2px);
+		}
+
+		@media (max-width: 360px) {
+			padding: 20px 16px 50px;		
 		}
 		
 		&::after {
@@ -496,7 +504,8 @@
 		font-weight: 600;
 		font-size: 11px;
 		line-height: 1.27;	
-		text-decoration: dotted;
+		text-decoration: underline;
+		white-space: nowrap;
 		color: #0071FF;
 		position: absolute;
 		left: 50%;

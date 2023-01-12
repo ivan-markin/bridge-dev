@@ -3,12 +3,24 @@
 		<div class="header__content-left">
 			<button class="header__menu-button"></button>
 			<a href="">
-				<img class="header__logo" src="@img/debridges-logo_dark.svg" width="137" height="24" alt="">
+				
+				@@if (className === 'header_inner header_dark') {
+					@@include('logo.html', {
+						'style': 'white'
+					})
+				}		
+				
+				@@if (className === 'header_inner') {
+					@@include('logo.html', {
+						'style': 'dark'
+					})
+				}
+
 			</a>
 		</div>		
 		<nav class="header__menu main-menu">
 			<ul>
-				<li class="main-menu__item active">
+				<li class="main-menu__item">
 					<a class="main-menu__item-link" href="">Transfers</a>
 				</li>
 				<li class="main-menu__item">
@@ -33,7 +45,7 @@
 			</ul>
 		</nav>
 		
-		<button class="header__cta btn btn_middle">Connect wallet</button>
+		<button class="header__cta btn btn_middle connect-wallet-btn">Connect wallet</button>
 		<!-- <a class="wallet-info-button">
 			<div class="wallet-info-button__logo">
 				<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">

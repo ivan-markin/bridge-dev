@@ -25,6 +25,10 @@
 		border: 1px solid #E2E6EE;
 		padding: 8px 20px;	
 
+		@media (max-width: 360px) {
+			padding: 8px 12px;	
+		}
+
 		&_from {			
 			border-radius: 16px 16px 0 0;			 
 		}

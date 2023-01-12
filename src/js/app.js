@@ -27,6 +27,8 @@ const tokensList = document.querySelector('.choose-token-popup__tokens-list');
 const chooseTokenPopup = document.querySelector('#chooseTokenPopup');
 const root = document.documentElement;
 const moreBtn = document.querySelector('#moreTokensBtn');
+const connectWalletBtn = document.querySelector('.connect-wallet-btn');
+const swapBtn = document.querySelector('.transfers-form__submit');
 
 flsFunctions.isWebp();
 smoothscroll.polyfill();
@@ -187,6 +189,7 @@ document.addEventListener('click', (evt) => {
 walletButton?.addEventListener('click', () => {
   const popup = document.querySelector('#walletActionsPopup');
   popup?.classList.add('active');
+  document.body.style.position = 'fixed';
 })
 
 faqItemHeaders.forEach(el => {
@@ -224,5 +227,21 @@ if (moreBtn) {
     const popup = evt.target.closest('.popup').querySelector('.switch-network-popup');
     popup.style.height = '100vh';
     popup.classList.add('active');
+  })
+}
+
+if (connectWalletBtn) {
+  connectWalletBtn.addEventListener('click', () => {
+    const popup = document.querySelector('.choose-wallet-popup');
+    popup.classList.add('active');
+  })
+}
+
+if (swapBtn) {
+  swapBtn.addEventListener('click', (evt) => {
+    const popup = document.querySelector('#agreementPopup');
+    evt.preventDefault();
+    popup.classList.add('active');
+    document.body.classList.add('fixed');
   })
 }

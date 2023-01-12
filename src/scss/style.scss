@@ -113,6 +113,11 @@
 @import './blocks/switch-network-popup.scss';
 @import './blocks/popup-back-btn.scss';
 @import './blocks/loader-large.scss';
+@import './blocks/steps-list.scss';
+@import './blocks/checkbox.scss';
+@import './blocks/agreement-popup.scss';
+@import './blocks/asterizm.scss';
+@import './blocks/asterizm-wrapper.scss';
 
 *,
 *::before,
@@ -157,6 +162,11 @@ fieldset {
   @media (max-width: 768px) {
     min-height: auto;
     background: none;
+  }
+
+  &_dark {
+    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center top;
+    background-size: contain;
   }
 }
 

@@ -39,6 +39,10 @@
 		overflow-y: scroll;
 		padding-right: 14px;
 
+		@media (max-width: 360px) {
+			height: calc(100vh - 190px);
+		}
+
 		&::-webkit-scrollbar {
 			width: 4px;
 		}
@@ -60,11 +64,14 @@
 
 		&-header {
 			display: flex;
-			align-items: center;
-			height: 70px;
-			padding: 24px 35px;
+			align-items: center;			
+			padding: 20px 35px;
 			position: relative;
 			cursor: pointer;
+
+			@media (max-width: 360px) {
+				padding: 12px 30px 12px 20px;
+			}
 
 			&::before {
 				content: '';
@@ -91,6 +98,10 @@
 
 			@media (max-width: 768px) {
 				right: 0;
+			}
+
+			@media (max-width: 360px) {
+				top: 12px;
 			}
 		}
 

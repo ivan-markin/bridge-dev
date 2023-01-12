@@ -51,6 +51,10 @@
 			font-weight: 600;
 			font-size: 11px;
 			color: #142438;
+
+			@media (max-width: 360px) {
+				font-size: 9px;
+			}
 			
 			&:not(:first-child)::before {
 				content: '';

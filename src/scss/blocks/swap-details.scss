@@ -87,6 +87,10 @@
 			width: 100%;
 			padding: 20px;
 		}
+
+		@media (max-width: 360px) {					
+			padding: 12px;
+		}
 	}
 
 	&__target-title {
@@ -138,6 +142,10 @@
 			padding: 16px 20px 0 20px;
 		}
 
+		@media (max-width: 360px) {
+			padding: 16px 12px 0 12px;
+		}
+
 		&-item {
 			display: flex;
 			align-items: center;
@@ -173,6 +181,10 @@
 
 		@media (max-width: 768px) {
 			gap: 10px;
+		}
+
+		@media (max-width: 360px) {
+			padding: 14px 12px 17px 12px;
 		}
 
 		&-item {
