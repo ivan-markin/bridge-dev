@@ -1,18 +1,14 @@
 .max-button {	
 	background: none;
 	border: none;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	color: var(--primary-blue);
 	cursor: pointer;
 	user-select: none;		
+	width: fit-content;
 	padding: 0;
-	margin-right: 8px;
-
-	@media (max-width: 1280px), (min-width: 1920px) {
-		font-size: .73vw;
-		margin-right: .36vw;
-	}
+	margin-right: 4px;
 
 	&:disabled {
 		color: rgba(149, 153, 173, 0.35);

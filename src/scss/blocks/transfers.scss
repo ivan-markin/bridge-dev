@@ -10,11 +10,15 @@
 	@media (max-width: 768px) {				
 		width: 100%;
 		padding: 25px;		
-	}	
+	}		
+
+	@media (max-width: 420px) {
+		padding-top: 12px;
+	}
 
 	@media (max-width: 360px) {						
 		padding: 25px 16px;		
-	}
+	}		
 
 	&::before {
 		content: '';
@@ -38,7 +42,7 @@
 			width: calc(100% - 2px);
 		}
 
-		@media (max-width: 360px) {
+		@media (max-width: 420px) {
 			padding: 20px 16px 50px;		
 		}
 		
@@ -201,14 +205,24 @@
 	&__supported {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		margin-bottom: 26px;
+
+		@media (max-width: 420px) {
+			margin-bottom: 12px;
+		}
 	}
 
 	&__supported-title {
 		font-size: 14px;
 		font-weight: 700;
 		color: #142438;		
-		margin-right: 5px;		
+		margin-right: 5px;	
+		
+		@media (max-width: 420px) {
+			max-width: 230px;
+			line-height: 1.43;
+		}
 
 		span {
 			color: var(--primary-blue);
