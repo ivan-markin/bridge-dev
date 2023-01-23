@@ -7885,25 +7885,27 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 6.56vw;
+  margin-top: 140px;
 }
 
 .choose-token-popup__tokens-list-empty img {
-  width: 2.96vw;
-  margin-bottom: 0.2vw;
+  width: 36px;
+  margin-bottom: 8px;
 }
 
 .choose-token-popup__tokens-list-empty span:first-of-type {
-  color: #0071FF;
-  font-size: 0.78vw;
-  font-weight: 600;
-  margin-bottom: 0.1vw;
+  color: #142438;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 4px;
 }
 
 .choose-token-popup__tokens-list-empty span:last-of-type {
-  color: #9599AD;
-  font-size: 0.625vw;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #9599AD;
 }
 
 .choose-token-popup__list-title {
@@ -13288,9 +13290,8 @@ fieldset {
   .choose-token-popup__source-tokens {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    overflow-y: visible;
-    height: auto;
-    padding: 20px 0;
+    height: calc(80vh - 30px);
+    padding: 20px 10px 0 0;
     margin-right: 10px;
   }
 
@@ -13301,6 +13302,10 @@ fieldset {
   .choose-token-popup__tokens-list {
     height: var(--tokens-list-height);
     padding: 24px 16px 0;
+  }
+
+  .choose-token-popup__tokens-list-empty span:last-of-type {
+    font-size: 12px;
   }
 
   .tokens-list-item:not(:last-child) {
