@@ -11204,30 +11204,6 @@ button.swiper-pagination-bullet {
   padding: 8px 8px 8px 12px;
 }
 
-.history__item_completed::after,
-.history__item_rejected::after,
-.history__item_pending::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-size: contain;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-
-.history__item_completed::after {
-  background: url("../../img/completed-icon.svg") no-repeat center;
-}
-
-.history__item_rejected::after {
-  background: url("../../img/rejected-icon.svg") no-repeat center;
-}
-
-.history__item_pending::after {
-  background: url("../../img/alert-icon_yellow.svg") no-repeat center;
-}
-
 .history__item-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11352,6 +11328,12 @@ button.swiper-pagination-bullet {
   color: #9599AD;
   width: 70%;
   margin: 0 0 20px;
+}
+
+.history__label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .show-all-btn {
@@ -11969,6 +11951,27 @@ button.swiper-pagination-bullet {
 
 .asterizm-wrapper {
   padding: 40px 0;
+}
+
+.cancelled-label {
+  width: 18px;
+  height: 18px;
+  background: url("../../img/rejected-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.pending-label {
+  width: 18px;
+  height: 18px;
+  background: url("../../img/alert-icon_yellow.svg") no-repeat center;
+  background-size: contain;
+}
+
+.completed-label {
+  width: 18px;
+  height: 18px;
+  background: url("../../img/completed-icon.svg") no-repeat center;
+  background-size: contain;
 }
 
 *,

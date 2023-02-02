@@ -82,37 +82,37 @@
 		position: relative;
 		padding: 8px 8px 8px 12px;		
 
-		&_completed,
-		&_rejected,
-		&_pending {
-			&::after {
-				content: '';
-				width: 18px;
-				height: 18px;				
-				background-size: contain;
-				position: absolute;
-				top: 8px;
-				right: 8px;
-			}
-		}
+		// &_completed,
+		// &_rejected,
+		// &_pending {
+		// 	&::after {
+		// 		content: '';
+		// 		width: 18px;
+		// 		height: 18px;				
+		// 		background-size: contain;
+		// 		position: absolute;
+		// 		top: 8px;
+		// 		right: 8px;
+		// 	}
+		// }
 		
-		&_completed {					
-			&::after {				
-				background: url('../../img/completed-icon.svg') no-repeat center;				
-			}
-		}
+		// &_completed {					
+		// 	&::after {				
+		// 		background: url('../../img/completed-icon.svg') no-repeat center;				
+		// 	}
+		// }
 
-		&_rejected {
-			&::after {				
-				background: url('../../img/rejected-icon.svg') no-repeat center;				
-			}
-		}
+		// &_rejected {
+		// 	&::after {				
+		// 		background: url('../../img/rejected-icon.svg') no-repeat center;				
+		// 	}
+		// }
 
-		&_pending {
-			&::after {				
-				background: url('../../img/alert-icon_yellow.svg') no-repeat center;				
-			}
-		}
+		// &_pending {
+		// 	&::after {				
+		// 		background: url('../../img/alert-icon_yellow.svg') no-repeat center;				
+		// 	}
+		// }
 
 		&-header {
 			display: flex;
@@ -208,5 +208,11 @@
 		color: #9599AD;
 		width: 70%;
 		margin: 0 0 20px;
+	}
+
+	&__label {
+		position: absolute;
+		top: 8px;
+		right: 8px;
 	}
 }
